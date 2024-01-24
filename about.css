@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&amp;display=swap');
-* 
-{
+
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12,13 +12,11 @@ body {
   transition: all 0.2s ease-in;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  overflow-y: auto;
-  min-height: 100vh;
   position: relative;
-  padding-bottom: 1100px; /* Adjust this value based on your footer's height */
+  margin: 0; /* Add this line to remove default body margin */
 }
- 
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -30,14 +28,13 @@ body::-webkit-scrollbar{
 
 .moncef-container {
   position: absolute;
-  top: 100px;
-  left: 260px;
+  top: -100px;
+  left: 160px;
 }
-
 
 .moncefpng {
   width: 510px;
-  height: 825px;
+  height: 745px;
   margin: 5px;
   padding: 5px;
   border-radius: 10%;
@@ -49,71 +46,58 @@ body::-webkit-scrollbar{
   margin-top: 20px;
 }
 
-/* Adjust the sizes and margins as needed */
-
 .h5 {
-  margin-top: 1 00px;
+  margin-top: 100px;
 }
 
 .aboutme {
-  font-size: 55px; /* Adjust the font size as needed */
-  margin-bottom: 10px; /* Add some space between the titles */
-  white-space: nowrap; /* Prevent wrapping onto the next line */
+  font-size: 55px;
+  margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .developer {
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.info-container {
-  margin-left: 800px;
+.info-container, .contactinformation {
   margin-top: 100px;
-
-}
-
-
-.contactinformation {
-  margin-top: 10px; /* Adjust the margin as needed */
-  position: absolute;
-  top: 30px; /* Adjust the top position as needed */
-  left: 580px; /* Adjust the right position as needed */
-  white-space: nowrap;
-}
-
-.name {
-  font-size: 30px; /* Adjust the font size as needed */
-  margin-top: 10px; /* Adjust the margin as needed */
-  position: absolute;
-  top: 80px; /* Adjust the top position as needed */
-  left: 10px; /* Adjust the right position as needed */
-  white-space: nowrap;
-}
-
-.phonenumber,
-.email,
-.country {
-  font-size: 20px; /* Adjust the font size as needed */
-  position: absolute;
-  top: 110px; /* Adjust the top position as needed */
-  left: 200px; /* Adjust the right position as needed */
-  white-space: nowrap;
-}
-
-.phonenumber {
-  top: 140px;
-  left: 480px;
-}
-
-.country {
-  top: 105px;
-  left: 480px;
+  margin-left: 800px;
 }
 
 .email {
-  top: 70px;
-  left: 480px;
+ margin-left: 700px;
+ margin-top: -50px;
+}
 
+.phonenumber {
+  margin-left: 700px;
+  margin-top: -20px;
+ }
+ 
+ .contact {
+  margin-left: 600px;
+  margin-top: -60px;
+ }
+
+ .country {
+  margin-left: 700px;
+  margin-top: -80px;
+ }
+
+.name {
+  font-size: 30px;
+  margin-top: 10px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  white-space: nowrap;
+}
+
+.phonenumber, .country, .email {
+  font-size: 20px;
+  position: absolute;
 }
 
 .image-container {
@@ -127,57 +111,65 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-
 .dark-mode {
   background-color: black;
 }
 
-.dark-mode h1,
-.dark-mode h5,
-.dark-mode p {
-  color: #f6f4e6; 
+.dark-mode h1, .dark-mode h5, .dark-mode p {
+  color: #f6f4e6;
 }
 
-
 .darkmodebutton {
-  position: fixed; 
+  position: fixed;
   top: 10px;
-  right: 10px; 
+  right: 10px;
   border-width: 0px;
   background-color: transparent;
   font-size: 1.2em;
 }
 
-
 #main-footer {
-  background-color: black;
-  color: #f6f4e6;
-  padding: 100px; /* Adjust the padding to make the footer bigger */
+  background-color: #000;
+  color: #fff;
+  padding: 20px; /* Adjusted padding */
   text-align: center;
-  position: absolute; /* Set the position to absolute */
-  bottom: 0; /* Stick the footer to the bottom */
+  position: fixed; /* Adjusted to fixed */
+  bottom: 0;
   width: 100%;
   z-index: 1000;
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 18px;
 }
 
 .dark-mode #main-footer {
   background-color: #f6f4e6;
-  color: #f6f4e6;
-  padding: 100px; /* Adjust the padding to make the footer bigger */
-  text-align: center;
-  position: absolute; /* Set the position to absolute */
-  bottom: 0; /* Stick the footer to the bottom */
-  width: 100%;
-  z-index: 1000;
-  font-size: 18px; /* Adjust the font size as needed */
+  color: #1d1c1a;
 }
 
-
-.dark-mode .name,
-.dark-mode .phonenumber,
-.dark-mode .email,
-.dark-mode .country {
+.dark-mode .name, .dark-mode .phonenumber, .dark-mode .email, .dark-mode .country {
   color: #1d1c1a;
+}
 
+.moncefpng, #aaron-image, #travisscott-image {
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .moncef-container, .info-container, .contactinformation, .phonenumber, .country, .email {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .moncefpng {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-container, .contactinformation, .phonenumber, .country, .email {
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
 }

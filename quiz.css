@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; /* Center content vertically */
-  height: 100vh; /* Ensure full viewport height is covered */
+  height: 70vh; /* Ensure full viewport height is covered */
   margin: 0; /* Remove default margin */
 }
 
@@ -93,4 +93,43 @@ p {
 
 .hide {
   display: none;
+}
+
+/* quiz.css */
+#quiz-footer {
+  background-color: black;
+  color: #fff;
+  padding:0px; /* Adjusted padding */
+  text-align: center;
+  position: fixed; /* Adjusted to fixed */
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 18px;
+}
+
+.name {
+  font-size: 30px;
+  margin-top: 10px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  white-space: nowrap;
+}
+
+.email {
+  margin-right: 600px;
+ }
+
+ .phonenumber {
+  margin-right: 600px;
+ }
+
+ .country {
+  margin-right: 600px;
+ }
+
+.phonenumber, .email, .country {
+  font-size: 23px;
+  font-weight: normal; /* Reset font weight to normal for these elements */
 }
