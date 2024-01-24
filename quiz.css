@@ -1,0 +1,96 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Ensure full viewport height is covered */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  /* Existing styles */
+  width: 450px;
+  padding: 20px;
+  margin-top: 80px;
+  border: 7px solid #202e4f;
+  background-color: #131b2e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+/* Add a new container for centering */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure full height of the container is covered */
+}
+
+/* Existing styles */
+.line-container {
+  border-top: 2px solid black;
+  margin-bottom: 40px;
+  margin-left: -20px;
+  width: 490px;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.options {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.option {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  border: 2px solid #233154;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1c2742;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
